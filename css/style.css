@@ -67,8 +67,48 @@ main {
     color: white;
 }
 
-.form {
+.form_section {
     flex: 2;
+    background-color: #F9FAFB;
 }
 
+.quote {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 15%;
+    font-size: 1.25rem;
+    font-family: Norse-bold;
+}
 
+.input {
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input > legend {
+    font-size: 2rem;
+    font-family: Norse-bold;
+}
+}
+
+#user_register {
+    display: flex;
+    flex-direction: column;
+}
+
+#user_register > * {
+    display: flex;
+    flex-direction: row;
+}
+
+#user_register > div > div {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    font-size: 1.25rem;
+    font-family: Norse-bold;
+}
+
+#user_register > .row3 > div {
+    margin-bottom: 2.5%;
+}
