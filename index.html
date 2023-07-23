@@ -29,52 +29,61 @@
             <div class="form">
                 <div class="input">
                     <legend>Let's do this!</legend>
-                    <form action="" method="post" id="user_register">
+                    <form action="" method="post" id="user_register" class="actual_form">
                         <div class="row1">
                             <div class="first_name">
                                 <label for="first_name">First Name</label>
                                 <br>
-                                <input type="text" name="first_name" id="" placeholder="Jhon">
+                                <input type="text" name="first_name" id="first_name_input" placeholder="Jhon" required>
+                                <p class="val_err_msg" id="first_name_error">First name is required</p>
                             </div>
                             <div class="last_name">
                                 <label for="last_name">Last Name</label>
                                 <br>
-                                <input type="text" name="last_name" id="" placeholder="asd" required>
+                                <input type="text" name="last_name" id="last_name_input" placeholder="asd" required>
+                                <p class="val_err_msg" id="last_name_error">Last Name is required</p>
                             </div>
                         </div>
                         <div class="row2">
                             <div>
                                 <label for="email">Email</label>
                                 <br>
-                                <input type="email" name="email" id="" placeholder="asd@domain.com" required>
+                                <input type="email" name="email" id="email_input" placeholder="asd@domain.com" required>
+                                <p class="val_err_msg" id="email_error_required" >Email is required</p>
+                                <p class="val_err_msg" id="email_error_invalid">Invalid email address</p>
                             </div>
                             <div>
                                 <label for="">Phone Number</label>
                                 <br>
-                                <input type="tel" name="" id="" placeholder="00-0000-0000">
+                                <input type="tel" name="telephone" id="telephone_input" placeholder="00-0000-0000" maxlength="12" required>
+                                <p class="val_err_msg" id="telephone_error_required">Phone number is required</p>
+                                <p class="val_err_msg" id="telephone_error_invalid">Invalid phone number</p>
                             </div>
                         </div>
                         <div class="row3">
                             <div>
                                 <label for="">password</label>
                                 <br>
-                                <input type="password" name="" id="">
+                                <input type="password" name="password" id="password_input" minlength="8" required>
+                                <p class="val_err_msg" id="password_error_required">Password is required</p>
+                                <p class="val_err_msg" id="password_error_len">Password must be at least 8 characters</p>
                             </div>
                             <div>
                                 <label for="">Confirm Password</label>
                                 <br>
-                                <input type="password" name="" id="">
+                                <input type="password" name="pasword verification" id="passwordVer_input" required>
+                                <p class="val_err_msg" id="passwordVer_error">Password doesn't match</p>
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="summit">
-                    <button type="submit">Create Account</button>
+                    <button type="submit" id="submit_btn" form="user_register">Create Account</button>
                     <p>Already have an account? <a href="#">Log in</a></p>
                 </div>
             </div>
             </div>
     </main>
-
+    <script src="scripts/validation.js"></script>
 </body>
 </html>
