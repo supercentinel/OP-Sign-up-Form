@@ -51,7 +51,6 @@ const password_confirm_error = form.querySelector('#passwordVer_error');
 const submit_btn = document.querySelector('#submit_btn');
 
 submit_btn.addEventListener('click', () => {
-    console.log('submit');
 
     //First name validation
     if (first_name_input.value === '') {

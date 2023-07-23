@@ -14,6 +14,7 @@ body {
 main {
     display: flex;
     flex-direction: row;
+    height: auto;
 }
 
 .odin {
@@ -47,7 +48,7 @@ main {
 .img_background {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
     flex: 1;
 }
 
@@ -69,7 +70,14 @@ main {
 
 .form_section {
     flex: 2;
+    display: flex;
+    flex-direction: column;
     background-color: #F9FAFB;
+    height: 100%;
+}
+
+.form_section > * {
+    flex: 1;
 }
 
 .quote {
@@ -138,4 +146,33 @@ input:focus:invalid {
     font-size: 0.75rem;
     font-family: Norse-bold;
     display: none;
+}
+
+.summit {
+    display: flex;
+    flex-direction: row;
+}
+
+.summit > * {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    font-size: 1.25rem;
+    font-family: Norse-bold;
+}
+
+.summit > button {
+    margin-top: 2.5%;
+    margin-bottom: 10%;
+    background-color: lightcyan;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.summit > button:hover {
+    background-color: lightblue;
+}
+
+.summit > button:active {
+    background-color: lightgreen;
 }
